@@ -11,7 +11,7 @@ interface GalleryValueProviderInterface
      *
      * @param mixed $value
      *
-     * @return array<mixed>
+     * @return iterable<mixed>
      */
-    public function get(mixed $value): array;
+    public function get(mixed $value): iterable;
 }

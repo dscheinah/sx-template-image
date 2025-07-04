@@ -28,9 +28,9 @@ class GalleryEmitter implements GalleryInterface
      * @param ImageConfigurationDTO $configuration
      * @param string|null $label
      *
-     * @return array<ImageDTO>
+     * @return iterable<ImageDTO>
      */
-    public function gallery(string $key, ImageConfigurationDTO $configuration, ?string $label = null): array
+    public function gallery(string $key, ImageConfigurationDTO $configuration, ?string $label = null): iterable
     {
         $value = $this->pageValueProvider->get('gallery', $key);
         if (!$value) {
